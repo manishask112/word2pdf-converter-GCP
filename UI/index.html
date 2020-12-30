@@ -1,0 +1,31 @@
+<html>
+<head>
+  <title>Text2PDF Converter</title>
+  <script type="text/javascript" src="text2pdf.js"></script>
+</head>
+<body style = "text-align: center;">
+  <h3>This is a Text to PDF Converter</h3>
+  <br>
+  <h4>Paste a text URL in the text box below and click on 'Convert to PDF'. Once your PDF is ready, enter your email id and we'll send the converted pdf to you!</h4>
+  <h4>Large files will take a while. PLease be patient!</h4>
+  <br><br>
+  <div>
+    <label for="email">Enter URL:</label>
+    <input type="text" id="url">
+    <button onclick="generatePDF()">
+        Convert to PDF
+    </button>
+    </br></br>
+    <div style = "display: none;" id ="mailID">
+      <label for="email">Enter your email:</label>
+      <input type="email" id="email" name="email">    
+      <button onclick="sendMail()">
+        Submit
+      </button>  
+    </div>
+    </br>
+    <div id = "target" >
+    </div>
+  </div>
+</body>
+</html>
